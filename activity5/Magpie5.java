@@ -1,3 +1,8 @@
+// Team Capybaras -- Kevin Hwang, Jannie Li, Lucy Tang, Jessica Yang
+// APCS2 pd9
+// HW29 -- Tay Who?
+// 2016-04-10
+
 import java.util.Random;
 
 /**

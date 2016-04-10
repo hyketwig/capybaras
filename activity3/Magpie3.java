@@ -1,3 +1,8 @@
+// Team Capybaras -- Kevin Hwang, Jannie Li, Lucy Tang, Jessica Yang
+// APCS2 pd9
+// HW29 -- Tay Who?
+// 2016-04-10
+
 /**
  * A program to carry on conversations with a human user.
  * This version: 
@@ -34,7 +39,7 @@ public class Magpie3
 		{
 			response = "Say something, please.";
 		}
-		else if (findKeyword(statement, "no", 0) >= 0)
+		else if (findKeyword(statement, "no") >= 0)
 		{
 			response = "Why so negative?";
 		}
@@ -45,34 +50,34 @@ public class Magpie3
 		{
 			response = "Tell me more about your family.";
 		}
-		else if (statement.indexOf("cat") >= 0
-		 || statement.indexOf("dog") >= 0)
+		else if (findKeyword(statement, "cat", 0) >= 0
+		 || findKeyword(statement, "dog") >= 0)
 	    {
 		response = "Tell me more about your pets.";
 	    }
-	else if (statement.indexOf("Mr.") >= 0
-		 || statement.indexOf("Sr.") >= 0)
+	else if (findKeyword(statement, "Mr.") >= 0
+		 || findKeyword(statement, "Sr.") >= 0)
 	    {
 		response = "He sounds like a good teacher.";
 	    }
-	else if (statement.indexOf("Ms.") >= 0
-		 || statement.indexOf("Mrs.") >= 0
-		 || statement.indexOf("Sra.") >= 0)
+	else if (findKeyword(statement, "Ms.") >= 0
+		 || findKeyword(statement, "Mrs.") >= 0
+		 || findKeyword(statement, "Sra.") >= 0)
 	    {
 		response = "She sounds like a good teacher.";
 	    }
-	else if (statement.indexOf("like") >= 0)
+	else if (findKeyword(statement, "like") >= 0)
 	    {
 		response = "Tell me more about your interests.";
 	    }
-	else if (statement.indexOf("winter") >= 0
-		 || statement.indexOf("spring") >= 0
-		 || statement.indexOf("summer") >= 0
-		 || statement.indexOf("autumn") >= 0)
+	else if (findKeyword(statement, "winter") >= 0
+		 || findKeyword(statement, "spring") >= 0
+		 || findKeyword(statement, "summer") >= 0
+		 || findKeyword(statement, "autumn") >= 0)
 	    {
 		response = "Tell me more about this season.";
 	    }
-	else if (statement.indexOf("eat") >= 0)
+	else if (findKeyword(statement, "eat") >= 0)
 	    {
 		response = "Tell me more about food.";
 	    }
